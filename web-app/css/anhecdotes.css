@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
+}
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	width:100%;
+	min-height: 100%;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 50px;
+}  /* must be same height as the footer */
+
+#footer {
+	position: relative;
+	margin-top: -50px; /* negative value of footer height */
+	height: 50px;
+	clear:both;
+	background-color: #002C76;	
+} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+
+*/
+
+/* GENERAL */
+
+body {
+    color: #000;
+    font: 11pt verdana, arial, helvetica, sans-serif;
+    background: #f3f3eb url('../images/background.png') repeat-y 50% 0;
+}
+
+a {
+	color: #002C76;
+}
+
+a:hover {
+	color: #AF0009;	
+}
+
+#header {
+	margin-top: 40px;
+	background-color: #002C76;
+	color: #fff;
+}
+
+#main-content{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.content{
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;	
+}
+#left-content{
+	width: 580px;
+}
+
+
+#right-content{
+	width: 190px;
+	float: right;
+	padding: 0 5px 0 5px;
+}
+
+#right-content h3{
+	color: #fff;	
+}
+
+.logo {
+	color: #fff;
+	font: 35pt verdana, arial, helvetica, sans-serif;
+}
+
+.box{
+	background-color: #f9f9f9;
+	min-height: 400px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-left: 20px solid #2f62bb;
+	
+}
+
+.box h2{
+	color: #002C76;
+	margin-bottom: 10px;
+}
+
+.box p{
+	margin-bottom: 10px;	
+}
+
+.col2 .logo{
+	color: #002C76;	
+}
+
+.col1, .col2, .col3 {
+	float: left;
+	hieght: 88px;
+}
+
+.col1 {
+	width: 67px;
+}
+
+.col1 h1 {
+	text-align: right;	
+}
+
+.col2{
+	background-color: #fff;
+	width: 84px;
+}
+
+.col3 h1{
+	text-align: left;
+}
+
+.lclear{
+	clear: left;	
+}
+
+.clear {
+	clear: both;	
+}
+
+.menu {
+	padding: 5px;	
+}
+
+.menu a{
+	text-decoration: none;
+	color: #fff;
+	font: 12pt verdana, arial, helvetica, sans-serif; 
+}
+
+.col3 .menu a{
+	margin-right: 20px;
+}
+
+.menu a:hover {
+	text-decoration: underline;	
+}
+
+.a-box {
+	width: 580px;
+	background-color: #f9f9f9;
+	margin-bottom: 20px;
+}
+.a-main {
+	position: relative;
+}
+
+.a-count {
+	width: 40px;
+	float: left;
+	background-color: #2f62bb;
+	color: #fff;
+	font: 18pt verdana, arial, helvetica, sans-serif;
+	text-align: center;
+	min-height: 80px;
+	padding: 10px 2px 2px 2px;
+	display: block;
+	text-decoration: none;
+}
+
+.a-count:hover{
+	color: #fff;
+}
+
+.a-content {
+	background-color: #f9f9f9;
+	color: #000;
+	padding: 10px 10px 10px 55px;
+}
+.a-more {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	color: 	#CFCFCF;
+}
+
+.a-footer, .c-footer{
+	clear: left;
+	color: #000;
+	background-color: #dfdfdf;
+	padding: 2px;
+}
+
+.a-user{
+	float: right;	
+}
+
+.a-msg{
+	display:none;
+}
+
+.a-admin-link{
+	float: right;	
+}
+
+.c-box{
+	
+	margin-top: 20px;
+	background-color: #f9f9f9;
+	border-left: 20px solid #2f62bb;
+	min-height: 80px;
+	padding: 5px;
+}
+
+#a-add-box{
+	display: none;
+}
+
+#c-add-box{
+	margin-top: 20px;
+}
+	
+.add-box{
+	background-color: #f9f9f9;
+	padding: 5px;
+	margin-bottom: 20px; 
+}
+.add-box h2, .add-box h3{
+	color: #002C76; 	
+}
+
+.add-box textarea{
+	width: 480px;
+	height: 65px;
+}
+input, select, textarea {
+	 border: 1px solid #002C76;
+}
+.add-box input[type=submit] {
+    height: 65px;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+input[type=submit] {
+	background: none repeat scroll 0 0 #2F62BB;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #002C76;
+    color: #fff;
+}
+
+input[type=submit]:hover{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#a-add-box-bottom{
+	margin-top: 3px;	
+}
+
+#a-add-box-bottom, #a-add-box-bottom input, #a-add-box-bottom select{
+	font-size: 8pt;	
+}
+#year {
+	width: 40px;	
+}
+#footer .col2{
+	height:50px;
+}
+
+.border-color-0 {
+	border-color: #2f62bb;
+}
+
+.border-color-1 {
+	border-color: #007e3a;
+}
+
+.border-color-2 {
+	border-color: #b27200;
+}
+
+.color-0 {
+	background-color: #2f62bb;
+}
+
+.color-1 {
+	background-color: #007e3a;
+}
+
+.color-2 {
+	background-color: #b27200;
+}
+
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px
+}
+
+div.errors, .s2ui_error  {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+    display:block;
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;
+}
+div.errors li {
+	background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+td.errors textarea {
+    border: 1px solid red;
+}
+
+/* PAGINATION */
+
+.paginateButtons {
+    padding: 10px 0;
+      background-color: #DFDFDF;
+    text-align: center;
+}
+.paginateButtons a {
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #002C76;
+    margin: 0 3px 0 0;
+    padding: 2px  6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
+    margin: 0 3px 0 0;
+}
+
+img{
+	border: none;	
+}
+
+#logos{
+	text-align: center;
+	margin-top: 200px;
+}
+
+#logos p{
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+a.vote {
+	text-decoration: none;
+}
+
+.addthis_counter.addthis_pill_style, .addthis_button_compact{
+	float:right;
+	margin-left: 5px;
+}
+
+/*
+Primary Color:
+002C76 162F59 001C4D 2F62BB 547ABB
+Secondary Color A:
+2E0079 31175B 1E004F 642FBC 7C55BC
+Secondary Color B:
+007E3A 185E38 005226 30BE72 56BE86
+Complementary Color:
+B27200 856221 744A00 D89F36 D8AE61
+*/
